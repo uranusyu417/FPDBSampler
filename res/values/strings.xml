@@ -1,5 +1,8 @@
 <resources>
 
-    <string name="app_name">FPDBSampler</string>
+    <string name="app_name">打点软件</string>
+    <string name="mac_address">Wi-Fi MAC地址</string>
+    <string name="server_address">服务器地址</string>
+    <string name="begin_sampling">开始打点</string>
 
 </resources>

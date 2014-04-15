@@ -4,5 +4,6 @@
     <string name="mac_address">Wi-Fi MAC地址</string>
     <string name="server_address">服务器地址</string>
     <string name="begin_sampling">开始打点</string>
+    <string name="tip">点击地图中指纹点进行“采集数据”或“删除数据”操作。红色表示未完成采集，绿色表示已完成采集。</string>
 
 </resources>

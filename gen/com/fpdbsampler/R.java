@@ -20,9 +20,9 @@ public final class R {
         public static final int horizontalScrollView1=0x7f060007;
         public static final int scrollView1=0x7f060006;
         public static final int spinnerMap=0x7f060005;
-        public static final int textView1=0x7f060000;
         public static final int textView2=0x7f060002;
         public static final int textViewMacAdr=0x7f060001;
+        public static final int textViewTip=0x7f060000;
     }
     public static final class layout {
         public static final int activity_entry=0x7f030000;
@@ -33,6 +33,7 @@ public final class R {
         public static final int begin_sampling=0x7f040003;
         public static final int mac_address=0x7f040001;
         public static final int server_address=0x7f040002;
+        public static final int tip=0x7f040004;
     }
     public static final class style {
         /** 

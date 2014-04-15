@@ -1,7 +1,9 @@
 package com.FPMap;
 
 import java.util.ArrayList;
+
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -12,8 +14,11 @@ import android.widget.Toast;
 
 public class FPMap extends ImageView {
 	
-	private Paint greenPaint;
-	private Paint redPaint;
+	//paint for drawing fingerprint points
+	private Paint greenPaint = null;
+	private Paint redPaint = null;
+	//FP point click callback
+	private FPPointClickListener fp_point_click_listener = null;
 	
 	final private int radius = 15;
 	
@@ -66,7 +71,11 @@ public class FPMap extends ImageView {
 			FPPoint fp = FPUtility.locateImmediateFP(x, y, fplist, radius);
 			if(fp != null)
 			{
-			Toast.makeText(getContext(), "FP Point "+fp.ID+" is clicked", Toast.LENGTH_SHORT).show();
+				if(fp_point_click_listener!=null)
+				{
+					//invoke call back
+					fp_point_click_listener.OnClick(fp);
+				}
 			}
 			break;
 		default:
@@ -91,6 +100,11 @@ public class FPMap extends ImageView {
 	{
 		fplist = _fplist;
 		this.invalidate();
+	}
+	
+	public void setFPPointClickListener(FPPointClickListener listener)
+	{
+		this.fp_point_click_listener = listener;
 	}
 	
 }

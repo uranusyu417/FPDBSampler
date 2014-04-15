@@ -19,7 +19,7 @@ public final class R {
         public static final int fpmap=0x7f060008;
         public static final int horizontalScrollView1=0x7f060007;
         public static final int scrollView1=0x7f060006;
-        public static final int spinnerMap=0x7f060005;
+        public static final int spinnerFloor=0x7f060005;
         public static final int textView2=0x7f060002;
         public static final int textViewMacAdr=0x7f060001;
         public static final int textViewTip=0x7f060000;

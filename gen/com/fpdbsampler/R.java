@@ -31,8 +31,12 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f040000;
         public static final int begin_sampling=0x7f040003;
+        public static final int load_floor_failure=0x7f040006;
+        public static final int load_fplist_failure=0x7f040008;
+        public static final int load_map_failure=0x7f040007;
         public static final int mac_address=0x7f040001;
         public static final int server_address=0x7f040002;
+        public static final int start_session_failure=0x7f040005;
         public static final int tip=0x7f040004;
     }
     public static final class style {
